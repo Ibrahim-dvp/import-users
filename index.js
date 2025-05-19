@@ -82,6 +82,10 @@ function getOrInitAdmin(projectId, keyPath) {
 	return fbApp;
 }
 
+app.get('/',(req,res)=>{
+res.send('gg');
+});
+
 // ─── Route: upload / overwrite service‐account JSON ─────────────────
 app.post(
 	"/api/store-service-account",
